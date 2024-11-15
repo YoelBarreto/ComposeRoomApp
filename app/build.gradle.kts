@@ -2,7 +2,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
-    id("kotlin-kapt")
+    id("com.google.devtools.ksp")
 }
 
 android {
@@ -50,7 +50,7 @@ dependencies {
 
     // Room
     implementation(libs.androidx.room.runtime)
-    kapt(libs.androidx.room.compiler)
+    ksp(libs.androidx.room.compiler.v250)
     implementation(libs.androidx.room.ktx)
 
     // lifecycle

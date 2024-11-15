@@ -51,7 +51,7 @@ fun TaskApp(database: AppDatabase) {
 
         // Mostrar lista de tareas
         tasks.forEach { task ->
-            androidx.compose.material.Text(text = task.name)
+            androidx.compose.material.Text(text = task.name, modifier = Modifier.padding(vertical = 8.dp))
         }
     }
 }

@@ -7,7 +7,7 @@ plugins {
 
 android {
     namespace = "com.yoel.composeroomapp"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.yoel.composeroomapp"
